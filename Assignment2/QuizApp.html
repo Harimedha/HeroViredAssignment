@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Quiz Application</title>
+</head>
+<body style="background-color:silver">
+
+<div class="divpositionclass" id="questions">
+	
+    <div id="attemptedQuestion"></div>
+    <br>
+    <br>
+	<div id="currentScore"></div>
+    <br>
+	<div>
+	
+        <form class="form-class" id="answerList" name="radioAnswers">
+            <p id="question"></p>		
+            <input type="radio" name="choice" value="0">
+            <label  id="radiolabel0"></label>
+            </input>
+            <br>
+            <input type="radio" name="choice" value="1">
+            <label id="radiolabel1"></label>
+            </input>
+            <br>
+            <input type="radio" name="choice" value="2">
+            <label id="radiolabel2"></label>
+            </input>
+            <br>
+            <input type="radio" name="choice" value="3">
+            <label id="radiolabel3">			
+            </label>
+            </input>
+            <br>
+        </form>            
+        <div>    
+            <input type="button" class="submit-button" value="Submit" id="Submit" onclick="nextQuestion()"></input>
+        </div>  
+    </div>
+</div>
+
+<div id="resultdivSec" class="resultdivclass" style="display: none;"></div>
+	<script src="questionsload.js"></script>
+</body>
+</html>
