@@ -1,6 +1,6 @@
 .trek-name{
-    /* margin: 0.5rem; */
-    /* padding: 0.5rem; */
+    margin: 1rem;
+    padding: 1rem;
     margin-left: 30%;  
     margin-right: 20%;  
     align-items: center;
@@ -20,4 +20,5 @@
  }
  .trek-desc{
     text-align: justify;
+    margin-bottom: 10px;
  }

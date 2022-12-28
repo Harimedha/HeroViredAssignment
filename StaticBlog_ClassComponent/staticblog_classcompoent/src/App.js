@@ -16,7 +16,7 @@ function App() {
     {
       title: "2.Auden's Col Trek",
       imgsrc: "images/AudensCol.jpg",
-      desc:"Joining the Khatling glacier and the Jogin I glacier is the Auden's Col pass. Standing at a height of 18,012 ft the trail to this gigantic pass presents a great experience Himalayan beauty accompanied by tough terrain only for experienced trekkers with long-driving mettle.",
+      desc:"Joining the Khatling glacier and the Jogin I glacier is the Auden's Col pass. The trail to this gigantic pass is great to experience Himalayan beauty accompanied by tough terrain only for experienced trekkers with long-driving mettle.",
       elevation:5284
    
     },

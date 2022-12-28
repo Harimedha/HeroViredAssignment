@@ -17,7 +17,7 @@ class TrekDetails extends React.Component {
 render(){
     return(
  
-        <div className = 'trek-name' >
+        <div className='trek-name' >
             <h2>{this.state.title}</h2>
             <div><img src={this.state.trekImage} className="trek-img" alt='trek-name'></img></div>
         
