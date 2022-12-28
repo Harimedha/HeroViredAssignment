@@ -1,0 +1,23 @@
+.trek-name{
+    /* margin: 0.5rem; */
+    /* padding: 0.5rem; */
+    margin-left: 30%;  
+    margin-right: 20%;  
+    align-items: center;
+    width: 500px;
+    height: 350px;
+    position: relative;    
+}
+.trek-img{
+    height: 200px;
+    width: 500px;
+}
+ .text-on-image {
+   position: absolute;
+   right: 50%;
+   left: 50%;
+   bottom: 15%;
+ }
+ .trek-desc{
+    text-align: justify;
+ }

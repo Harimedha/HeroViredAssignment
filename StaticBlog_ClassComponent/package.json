@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "react-fontawesome": "^1.7.1"
+  }
+}
