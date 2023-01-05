@@ -20,78 +20,78 @@ function YTVideoContainer() {
            <YTPlaylistCard
               title='Mix - Wincent Weiss Hier Mit Dir'
               desc='Wincent Weiss Mark Forester Max Geisinger and more'
-              thumbnail='http://img.youtube.com/vi/FPfryMEiENc/mqdefault.jpg'
+              thumbnail='/images/Thumbnails/playlist.jpg'
               playlist='images/sidemenuicons/live-streaming.svg'
             />   
             {/* {YTVideoList.map((ytvideoObj,idx) =>
               <YTVideoCard props={ytvideoObj}/>
             )}  */}
         <YTVideoCard
-          channelImg='https://yt3.ggpht.com/xFtBd1sqqzi5uPqlSppIxHnqLxEHMrLQkAhX51k29NL_pMXrO5K4MrOKmv9HI6yFduJVaztBTw=s88-c-k-c0x00ffffff-no-rj'
+          channelImg='/images/Thumbnails/channel_logo_v1.jpg'
           timestamp='4 weeks ago'
           viewsCount='66K Views'
           channelName='Juan Carlos Fontecha'
           duration='8:15'
           title='A Day in the Life of a Software Engineer | Microsoft Inside Look'
-          thumbnail='http://img.youtube.com/vi/LGDughLj1Oo/mqdefault.jpg'
+          thumbnail='/images/Thumbnails/channel_image_v1.jpg'
         />
          <YTVideoCard
-          channelImg='https://yt3.ggpht.com/ytc/AMLnZu914lhpMbbze5xNfGSUoxCCTqnvtpLLllJZgNNC8Q=s48-c-k-c0x00ffffff-no-rj'
+          channelImg='/images/Thumbnails/channel_logo_v2.jpg'
           timestamp='3 years ago'
           viewsCount='64K Views'
           channelName='Nomadic Ambience'
           duration='20:03'
           title='Shopping Mall Ambience Sound Effects Noises'
-          thumbnail='http://img.youtube.com/vi/H3GL5jO53NU/mqdefault.jpg'
+          thumbnail='/images/Thumbnails/channel_image_v2.jpg'
         />
          <YTVideoCard
-          channelImg='https://yt3.ggpht.com/uBTb5eqbx59OUvBgVz-lPLhfXUtnHBr5oJW01U_KlSq4SBJtsOrG_rKQCaTEJPhmM4ePI5X_GA=s48-c-k-c0x00ffffff-no-rj'
+          channelImg='/images/Thumbnails/channel_logo_v3.jpg'
           timestamp='4 months ago'
           viewsCount='1.7M Views'
           channelName='Aceink - Smart Theory'
           duration='14:54'
           title='How FAILURE is KILLING Dabbawala?'
-          thumbnail='http://img.youtube.com/vi/mihj9jzIN2g/mqdefault.jpg'
+          thumbnail='/images/Thumbnails/channel_image_v3.jpg'
 		 />
 		<YTVideoCard
-         channelImg='https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s48-c-k-c0x00ffffff-no-rj'
+         channelImg='/images/Thumbnails/channel_logo_v4.jpg'
          timestamp='2 years ago'
          viewsCount='2.7M Views'
          channelName='freeCodeCamp.org'
          duration='5:55:46'
          channelTitle='Python Tutorials'
          title='Intermediate Python Programming Course'
-         thumbnail='http://img.youtube.com/vi/HGOBQPFzWKo/mqdefault.jpg'/>
+         thumbnail='/images/Thumbnails/channel_image_v4.jpg'/>
 
          <YTVideoCard
-         channelImg='	https://yt3.ggpht.com/ytc/AMLnZu9EpXIt5Mva9C-tmV00n6c3e5MS-p3dTStu4bI3=s88-c-k-c0x00ffffff-no-rj'
+         channelImg='/images/Thumbnails/channel_logo_v5.jpg'
          timestamp='10 days ago'
          viewsCount='80 Views'
          channelName='saint r4ge'
          duration='26:19'
          channelTitle=""
          title='Cold AF Happy Chill Mix | Ft. EverMoist w/ Gunther'
-         thumbnail='http://img.youtube.com/vi/ozebgmwY8-4/mqdefault.jpg'/>
+         thumbnail='/images/Thumbnails/channel_image_v5.jpg'/>
 
         <YTVideoCard
-        channelImg='https://yt3.ggpht.com/ytc/AMLnZu_vQQNV-1kCUqj1RTy8459aEnVOjtq7x1CVq06i=s88-c-k-c0x00ffffff-no-rj'
+        channelImg='/images/Thumbnails/channel_logo_v6.jpg'
         timestamp='1 year ago'
         viewsCount='4.5M Views'
         channelName='Love Music Forever'
         duration='55:00'
         channelTitle=""
         title='Top Hits 2021 | Chill Songs | At My Worst x Monsters x Beautiful Scars 💕'
-        thumbnail='http://img.youtube.com/vi/fPCk28a0DSc/mqdefault.jpg'
+        thumbnail='/images/Thumbnails/channel_image_v6.jpg'
         />
         <YTVideoCard
-        channelImg='https://yt3.ggpht.com/ytc/AMLnZu8j_kgsHlAlSpor-jIA-FrQCg2ixWqvqTAofoHf=s88-c-k-c0x00ffffff-no-rj'
+        channelImg='/images/Thumbnails/channel_logo_v7.jpg'
         timestamp='5 days ago'
         viewsCount='236K Views'
         channelName='TV Promos'
         duration='4:06'
         channelTitle=""
         title='Young Sheldon 6x09 All Sneak Peeks "College Dropouts and the Medford Miracle" (HD)'
-        thumbnail='http://img.youtube.com/vi/6xpnzHv3lrk/mqdefault.jpg'
+        thumbnail='/images/Thumbnails/channel_image_v7.jpg'
         />
         </div>
     )
