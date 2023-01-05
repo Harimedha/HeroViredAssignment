@@ -1,0 +1,10 @@
+.ytsearch-container{
+    display: flex;
+    flex-direction: column;
+     border: 1px solid grey;
+     margin-left: 16%;
+     margin-top: 2%;
+     position: sticky;
+     background-color: whitesmoke;
+     align-items: center;
+ }

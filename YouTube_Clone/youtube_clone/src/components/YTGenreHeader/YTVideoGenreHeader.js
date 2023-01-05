@@ -1,23 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import './YTVideoGenreHeader.css'
 
 function YTVideoGenreHeader() {
-    // useEffect(() => {
-    //     const genre_child = document.querySelectorAll('.genre');      
-    //     if(genre_child){
-    //         genre_child.forEach((childObj) => {
-
-    //             childObj.addEventListener("mouseover",()=>{
-    //                 // childObj.classList.add("active");
-    //             })
-    //         })
-    //         }},[])
-
-
-    const [hoverElements, setHoverElements] = useState(false)
+   
     const Genres = ["All", "Mixes", "Music", "Onedirection", "Computer Programming", "Live", "Playlists", "Chill-out music", "AI", "Love songs", "Gaming", "Motivation"]
-
 
     return (
        

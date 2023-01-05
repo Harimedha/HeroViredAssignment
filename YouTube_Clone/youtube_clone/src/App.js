@@ -1,14 +1,21 @@
 import './App.css';
 import YTHeader from './components/YTHeader/YTHeader';
 import YTVideoContainer from './components/YTVideoContainer/YTVideoContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import YTSearchResult from './components/YTSearchResult/YTSearchResult';
 
 
 
 function App() {
   return (
     <div className="App">
-     <YTHeader/>
-     <YTVideoContainer/>
+     <BrowserRouter>
+        <YTHeader/>
+        <Routes>
+        <Route path='/' element={<YTVideoContainer/>} />
+        <Route path="/search/:searchterm" element={<YTSearchResult/>}/>        
+        </Routes>     
+      </BrowserRouter>
     </div>
   );
 }

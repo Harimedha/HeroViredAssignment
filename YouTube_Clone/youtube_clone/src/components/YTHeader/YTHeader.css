@@ -52,16 +52,29 @@
     flex:1; /*Flex 1 allows the div to take width based on content*/
     /* margin-right: 15px; */
     }
-.ytheader-container-center > button {
+/* .ytheader-container-center > button {
     width: 40px;
     border-radius: 0 100px 100px 0;
     border: 1px solid lightgray;
     margin-right: 15px;
     /* height: 26px; */
-}
+/*}
 .ytheader-container-center > button > img{
     padding-top: 3px;
     height: 18px;
+} */
+
+.ytsearchicon{
+    width: 30px;
+    border-radius: 0 100px 100px 0;
+    border: 1px solid lightgray;
+    margin-right: 15px;
+    height: 25px;
+}
+.ytsearchicon >img{
+    height: 20px;
+    padding-left: 5px;
+    padding-top: 3px;
 }
 .ytheader-container-right{
     width: 10%;
