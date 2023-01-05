@@ -1,0 +1,78 @@
+.ytheader-container{
+    display: flex;
+    /* height: 20px; */
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 10px 20px;
+    position: sticky;
+    top:0; /*postion 0 px from top edge*/
+    z-index: 3;
+    background-color: white;
+}
+.ytheader-container-left{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: white;
+    width: 17%;
+    margin-right: 10%;
+}
+.ytheader-container-left >img{
+    height: 25px;
+    padding: 0 10px 0 10px ;
+}
+
+.ytheader-container-center{
+    display: flex;
+    align-items: center;
+    /* background-color: coral; */
+    width: 45%;
+    /* flex: 1; */
+    margin-right: 20%;
+    /* border: 1px solid lightgray; */
+}
+.ytheader-container-center > img{
+    height: 15px;
+    width: 15px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    background-color: #fafafa;
+    /* border: 1px solid gray; */
+    /* padding-left: 20px; */
+}
+.ytheader-container-center > input{ 
+    /* background-color: magenta; */
+    border-radius: 100px 0 0 100px;
+    font-size: 15px;
+    border: 1px solid lightgray;
+    outline: #fafafa;
+    border-width: 1px;
+    height: 24px;
+    flex:1; /*Flex 1 allows the div to take width based on content*/
+    /* margin-right: 15px; */
+    }
+.ytheader-container-center > button {
+    width: 40px;
+    border-radius: 0 100px 100px 0;
+    border: 1px solid lightgray;
+    margin-right: 15px;
+    /* height: 26px; */
+}
+.ytheader-container-center > button > img{
+    padding-top: 3px;
+    height: 18px;
+}
+.ytheader-container-right{
+    width: 10%;
+    display: flex;
+    /* background-color: lightcyan; */
+    align-items: center;
+    justify-content: space-between;
+}
+.ytheader-container-right >img{
+    height: 22px;
+}
+.ytprofile-avatar{
+    height: 30px!important;
+}

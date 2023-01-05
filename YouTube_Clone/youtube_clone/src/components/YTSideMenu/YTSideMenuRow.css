@@ -1,0 +1,72 @@
+.ytsidemenu-container {
+    position: fixed;
+    background-color: white;
+    overflow-y: scroll;    
+    /* overflow-x: hidden; */
+    /*using z index to overlay sidemenu on the main container*/
+    z-index: 5;
+    height: 540px;
+    top: 12%;
+    /* Height w.r.t to header element*/
+    width: 15%;
+}
+/* .side-menu-container::-webkit-scrollbar {
+    width: 50px; 
+    visibility: visible;
+} */
+.ytsidemenu-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.ytsidemenu-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: space-between; */
+    padding: 10px 0  10px 0;
+    text-align: center;
+    /* background-color: lightblue; */
+}
+
+.ytsidemenu-item>img {
+    height: 20px;
+    width: 20px;
+    color: grey;
+    margin-left: 10px;
+}
+
+.ytsidemenu-item > span {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    font-family: Roboto,sans-serif;
+    margin-left: 20px;
+    max-width: 100%;
+    display: block;
+    max-height: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /**for converting text overflow to ... */
+    white-space: nowrap;
+    /* line-height: 1.4rem; */
+}
+
+.ytsidemenu-item:hover {
+    background-color: rgb(228, 222, 222);
+    /* border: 1px solid lightgray; */
+    border-radius: 20px;
+    /* padding: 5px; */
+    cursor: pointer;
+}
+
+.hr-new {
+    width: 85%;
+    background-color: lightgray;
+    border: 0;
+    height: 1px;
+}
