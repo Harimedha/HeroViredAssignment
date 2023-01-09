@@ -41,7 +41,7 @@ class Game
             @playerTurnCount+=1
             @gameBoard.board_update(@player_move,sym)
             player_win_check
-            # player_draw_check
+            draw_check
         else 
             puts "Enter a valid input from 1 to 9"
         end
@@ -68,7 +68,7 @@ class Game
         end
     end
     def draw_check
-        if playerTurnCount==10 && @end==true
+        if(@playerTurnCount==10 && @end==true)
             puts "Game ended in Draw"
             play_again
         end
@@ -78,6 +78,7 @@ class Game
         regame = gets.chomp
         if regame=="Y"
             @gameBoard.board.clear
+            playerMove
         else
             regame=="N"
             exit
@@ -102,11 +103,11 @@ class GameBoard
     end
         def display(board)
             puts """
-            | #{board[0]}?"1" | #{board[1]}| #{board[2]} |
+            | #{board[0]}| #{board[1]}| #{board[2]} |
             ---------------
             | #{board[3]} | #{board[4]} | #{board[5]} |
             ---------------
-            | #{board[6]} | #{board[7]} | #{board[9]} |
+            | #{board[6]} | #{board[7]} | #{board[8]} |
             """
         end
 
