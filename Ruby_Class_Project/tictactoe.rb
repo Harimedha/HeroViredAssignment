@@ -20,10 +20,10 @@ class Game
         @gameBoard = GameBoard.new
         while @playerTurnCount < 10 
 
-            if(@playerTurnCount % 2 == 1)
+            if(@playerTurnCount % 2 != 0)
             # if @player_turn.odd?
                 sequence(@players.player1, "X")
-            else 
+            elsif(@playerTurnCount % 2 == 0)
                 sequence(@players.player2, "O")
             end
         end
@@ -52,6 +52,7 @@ class Game
             if(@gameBoard.board[win_check_row[0]] == @gameBoard.board[win_check_row[1]]) &&
                 (@gameBoard.board[win_check_row[1]] == @gameBoard.board[win_check_row[2]]) &&
                 ((@gameBoard.board[win_check_row[0]] != " "))
+
                 if(@gameBoard.board[win_check_row[0]] == "X")
                     puts "#{@players.player1} won the game"
                     @playerTurnCount=10
@@ -103,7 +104,7 @@ class GameBoard
     end
         def display(board)
             puts """
-            | #{board[0]}| #{board[1]}| #{board[2]} |
+            | #{board[0]} | #{board[1]} | #{board[2]} |
             ---------------
             | #{board[3]} | #{board[4]} | #{board[5]} |
             ---------------
