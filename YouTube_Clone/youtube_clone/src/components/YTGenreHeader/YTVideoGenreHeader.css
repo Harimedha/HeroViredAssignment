@@ -6,7 +6,7 @@
     position:sticky;  
     display: flex;
     z-index: 1; /*for overlaying the video container under the header*/
-      top:60px;
+      top:50px;
       background-color: white;
     /* flex-direction: row; */
     align-items: center;
@@ -26,7 +26,7 @@
       overflow-x: scroll;
       scroll-behavior: smooth;
       /* padding-top: 10px; */
-      /* background-color: burlywood; */
+      background-color: white;
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;
     }
