@@ -1,10 +1,17 @@
+import { Link } from 'react-router-dom';
 import './YTVideoCard.css';
 
 function YTVideoCard(props) {
   // console.log(props.channelImg)
+  const movie = props.title;
+  // console.log("Video is " + props.title);
+  // console.log("Video is " + movie);
+
+
   return (
     <div className='ytvideo-card'>
-      <img src={props.thumbnail} className="ytvideo-card-image" alt='' />
+      <Link to="/videoDetails" state={movie}>
+      <img src={props.thumbnail} className="ytvideo-card-image" alt='' /></Link>
       <div className='ytvideo-card-duration'>{props.duration}</div>
       <div className="ytvideo-channel-profile">
         <img alt={props.channel} src={props.channelImg} />
