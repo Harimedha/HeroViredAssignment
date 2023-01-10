@@ -1,29 +1,70 @@
 import React from 'react'
 import './YTVideoGenreHeader.css'
+import { useState, useRef } from "react";
+import {FaAngleRight, FaAngleLeft} from  'react-icons/fa'
 
 function YTVideoGenreHeader() {
    
-    const Genres = ["All", "Mixes", "Music", "Onedirection", "Computer Programming", "Live", "Playlists", "Chill-out music", "AI", "Love songs", "Gaming", "Motivation"]
-
+    const [leftScroll, setLeftScroll] = useState(0);
+    const [rightScroll, setsrightScroll] = useState(false);
+  
+  
+    let scrollPos = useRef(null);
+  
+    const getScrollPosition = () => {
+      setLeftScroll(scrollPos.current.scrollLeft);
+      checkScrollPosition()
+    };
+  
+    const checkScrollPosition = () =>{
+      if (
+          Math.floor(scrollPos.current.scrollWidth - scrollPos.current.scrollLeft) <=
+          scrollPos.current.offsetWidth
+        ) {
+            setsrightScroll(true);
+        } else {
+            setsrightScroll(false);
+        }
+  
+    }
+    const scrollTo = (offsetVal) => {
+      scrollPos.current.scrollLeft += offsetVal;
+      setLeftScroll(leftScroll + offsetVal);
+      checkScrollPosition()
+    };
+  
+    const Genres = ["All", "Mixes", "Music", "One direction", "Computer Programming", "Live", "Playlists", "Chill-out music", "AI", "Love songs", "Gaming", "Motivation"]
+   
+   
+   
+  
     return (
-       
-            <div className='ytgenres'>
-                <div style={{position:'absolute'}}>
-                {Genres?.map((genre, idx) => (
-                    genre === "All" ?
-                        (<label key={idx} className="ytgenre active">
-                            {genre}
-                        </label>) :
-                        <label key={idx} className="ytgenre">
-                            {genre}
-                        </label>
-                ))}  
-                </div>
-                <div className='ytright-arrow'>                              
-            <img src="/images/sidemenuicons/next.svg" alt="right_arow" />
-            </div>
-        </div>          
-    )
-}
+      <div className="ytgenre-carousel">
+        {leftScroll !== 0 && (
+          <button
+            onClick={() => scrollTo(-50)}       
+          ><FaAngleLeft/>
+          </button>
+        )}
+        <ul ref={scrollPos} onScroll={getScrollPosition}>
+          {Genres.map((genre, idx) => (
+              genre==="All" ?
+              (<li style={{backgroundColor:"black",
+              color:"whitesmoke"
+              }} 
+              
+              key={idx}>{genre}</li>):
+            <li key={idx}>{genre}</li>
+          ))}
+        </ul>
+        {!rightScroll && (
+          <button
+            onClick={() => scrollTo(+50)}>
+            <FaAngleRight/>
+          </button>
+        )}
+      </div>
+    );
+  }
 
 export default YTVideoGenreHeader
