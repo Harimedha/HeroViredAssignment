@@ -42,8 +42,9 @@ function YTVideoGenreHeader() {
       <div className="ytgenre-carousel">
         {leftScroll !== 0 && (
           <button
-            onClick={() => scrollTo(-50)}       
-          ><FaAngleLeft/>
+            onClick={() => scrollTo(-50)}>     
+          {/* <img src='../images/Searchresults/left-arrow.svg' alt="right"/> */}
+            <FaAngleLeft/>
           </button>
         )}
         <ul ref={scrollPos} onScroll={getScrollPosition}>
@@ -61,6 +62,7 @@ function YTVideoGenreHeader() {
           <button
             onClick={() => scrollTo(+50)}>
             <FaAngleRight/>
+            {/* <img src='../images/Searchresults/right-arrow.svg' alt="right"/> */}
           </button>
         )}
       </div>
